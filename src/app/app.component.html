@@ -25,6 +25,10 @@
     <p class="align-left">{{person.name}}</p>
     <p class="align-right">{{person.color}} {{person.age}}</p>
   </div>
+  <div [style.color]="person.color" *ngSwitchCase="'white'">
+    <p class="align-left">{{person.name}}</p>
+    <p class="align-right">{{person.color}} {{person.age}}</p>
+  </div>
 </div>
   <div class="floating-action-button"> + </div>
 </div>

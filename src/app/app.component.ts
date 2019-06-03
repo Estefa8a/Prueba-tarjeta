@@ -28,7 +28,7 @@ export class AppComponent {
     {
       "name": "Estefa",
       "age": 21,
-      "color": 'pink'
+      "color": 'white'
     }
   ];
 
