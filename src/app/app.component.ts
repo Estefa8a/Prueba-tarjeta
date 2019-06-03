@@ -5,16 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
+
   name = 'Estefania Ochoa H';
-  following = 900;
+  following = 110;
   followers = 680;
   email = 'estefaniaochoah@gmail.com';
  
 
   strengths = [{ text: 'Profesión', level: 'Zootecnista' },{ text: 'English', level: 'Basic' }, { text: 'HTML', level: 'Basic' } ];
 
-  people = [
+  gente = [
     {
       "name": "Estefania Ochoa",
       "age": 32,

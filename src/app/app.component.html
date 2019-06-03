@@ -4,15 +4,21 @@
   </div>
   
   <div class="infobox">
-    <p class="infobox-username" *ngIf="name">{{name}}</p>
+    <p class="infobox-username">{{name}}</p>
     <div class="">
-      <p class="infobox-email" *ngIf="email">{{email}}</p>
+      <p class="infobox-email">{{email}}</p>
     <div class="">
-  <p class="align-left" *ngIf="following > 100">Following:</p><p class="align-right">{{following}}</p>  
+
+  <div class="clear-float" *ngIf="following > 100"> 
+    <p class="align-left">Following:</p>
+    <p class="align-right">{{following}}</p>  
+  </div>
+
 </div>
 
-<div class="clear-float" *ngIf="following > 700">
-  <p class="align-left">Followers:</p><p class="align-right">{{followers}}</p>  
+<div class="clear-float" *ngIf="following > 100">
+  <p class="align-left">Followers:</p>
+  <p class="align-right">{{followers}}</p>  
 </div>
   </div>
 
@@ -20,14 +26,14 @@
     <p class="align-left">{{strength.text}}</p><p class="align-right">{{strength.level}}</p>  
 </div>
 
-<div class="clear-float" *ngFor="let person of people" [ngSwitch]="person.color">
-  <div [style.color]="person.color" *ngSwitchCase="'pink'">
-    <p class="align-left">{{person.name}}</p>
-    <p class="align-right">{{person.color}} {{person.age}}</p>
+<div class="clear-float" *ngFor="let persona of gente" [ngSwitch]="persona.color">
+  <div [style.color]="persona.color" *ngSwitchCase="'pink'">
+    <p class="align-left">{{persona.name}}</p>
+    <p class="align-right">{{persona.color}} {{persona.age}}</p>
   </div>
-  <div [style.color]="person.color" *ngSwitchCase="'white'">
-    <p class="align-left">{{person.name}}</p>
-    <p class="align-right">{{person.color}} {{person.age}}</p>
+  <div [style.color]="persona.color" *ngSwitchCase="'white'">
+    <p class="align-left">{{persona.name}}</p>
+    <p class="align-right">{{persona.color}} {{persona.age}}</p>
   </div>
 </div>
   <div class="floating-action-button"> + </div>
