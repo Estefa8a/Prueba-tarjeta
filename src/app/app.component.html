@@ -30,10 +30,12 @@
   <div [style.color]="persona.color" *ngSwitchCase="'pink'">
     <p class="align-left">{{persona.name}}</p>
     <p class="align-right">{{persona.color}} {{persona.age}}</p>
+    <p class="align-right">{{persona.data[0].sexo}} </p>
   </div>
   <div [style.color]="persona.color" *ngSwitchCase="'white'">
     <p class="align-left">{{persona.name}}</p>
     <p class="align-right">{{persona.color}} {{persona.age}}</p>
+    <p class="align-right">{{persona.data.sexo}} </p>
   </div>
 </div>
   <div class="floating-action-button"> + </div>

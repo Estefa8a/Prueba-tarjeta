@@ -20,17 +20,20 @@ export class AppComponent {
     {
       "name": "Estefania Ochoa",
       "age": 32,
-      "color": 'blue'
+      "color": 'blue',
+      "data":[{"sexo":'M'},{"sexo":'F'}]
     },
     {
       "name": "Carlos Angulo",
       "age": 25,
-      "color": 'pink'
+      "color": 'pink',
+      "data":[{"sexo":'M'},{"sexo":'F'}]
     },
     {
       "name": "Estefa",
       "age": 21,
-      "color": 'white'
+      "color": 'white',
+      "data":[{"sexo":'M'},{"sexo":'F'}]
     }
   ];
 
