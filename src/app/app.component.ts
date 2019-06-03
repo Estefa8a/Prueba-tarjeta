@@ -23,12 +23,12 @@ export class AppComponent {
     {
       "name": "Carlos Angulo",
       "age": 25,
-      "color": 'green'
+      "color": 'pink'
     },
     {
       "name": "Estefa",
       "age": 21,
-      "color": 'Azul'
+      "color": 'pink'
     }
   ];
 
